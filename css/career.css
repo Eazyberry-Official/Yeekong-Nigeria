@@ -1,0 +1,125 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    outline: none;
+}
+#career{
+    overflow: hidden;
+}
+#Business_banners {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/opportunity.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+.fa {
+    color: #fff;
+}
+.CSR_content {
+    text-align: center;
+    color: #fff;
+    margin-top: 35vh;
+}
+
+.CSR_content h1 {
+    font-weight: bolder;
+}
+
+#CSR_about {
+    margin-top: 15vh;
+    min-height: 50vh;
+}
+
+
+.CRS_LB {
+    font-size: 13px;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+@media (min-width: 1200px) {
+    .CSR_radius_top_left {
+        border-top-left-radius: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .CSR_radius_top_right {
+        border-top-right-radius: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .CSR_radius_bottom_left {
+        border-bottom-left-radius: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .CSR_radius_bottom_right {
+        border-bottom-right-radius: 50%;
+    }
+}
+
+.icon-background1 {
+    color: rgba(255, 0, 25, 0.748);
+}
+
+.icon-background2 {
+    color: #a99710;
+}
+
+.icon-background3 {
+    color: #1a2786;
+}
+
+.icon-background4 {
+    color: red;
+}
+
+.icon-background5 {
+    color: #03a9f4;
+}
+
+.icon-background6 {
+    color: #8bf78b;
+}
+
+.icon-background7 {
+    color: #0f3959;
+}
+
+.icon-background8 {
+    color: #0f3959;
+}
+.icon-background9 {
+    color: #0f5924;
+}
+.icon-background10 {
+    color: #1e0924;
+}
+.icon-background11 {
+    color: #0f5459;
+}
+.icon-background12 {
+    color: #1d0f59;
+}
+.icon-background13 {
+    color: #592d0f;
+}
+.icon-background14 {
+    color: #55590f;
+}
+.icon-background15 {
+    color: #b6b5ff;
+}
+
+

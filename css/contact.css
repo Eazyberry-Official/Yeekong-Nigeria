@@ -1,0 +1,498 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    outline: none;
+}
+#navtwo .navbar {
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#navtwo .nav-link {
+    color: #1060a9;
+}
+#contactHome{
+    overflow: hidden;
+}
+
+#contactBanner {
+    margin-top: 82px;
+    min-height: 65vh;
+    background: url(../images/contact1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contactBannerText {
+    margin-top: 200px;
+}
+
+.contactBannerText h1 {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.contactBannerText p {
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+#contact_form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #11421f;
+    overflow: hidden;
+}
+
+#contact_form::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #84f403;
+}
+
+#contact_form .container {
+    position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+    z-index: 2;
+}
+
+#contact_form .container .contact_info {
+    position: absolute;
+    top: 40px;
+    width: 350px;
+    height: calc(100% - 80px);
+    background: #0f3959;
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+#contact_form .container .contact_info h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#contact_form .container .contact_info .info {
+    position: relative;
+    margin: 20px 0;
+}
+
+#contact_form .container .contact_info .info li {
+    list-style-type: none;
+    position: relative;
+    margin: 20px 0;
+    display: flex;
+    cursor: pointer;
+    align-items: flex-start;
+}
+
+#contact_form .container .contact_info .info li span:nth-child(1) {
+    width: 30px;
+    min-width: 30px;
+}
+
+#contact_form .container .contact_info .info li span:nth-child(1) i {
+    color: #fff;
+    opacity: .5;
+}
+
+#contact_form .container .contact_info .info li span:nth-child(1) i:hover {
+    opacity: .9;
+}
+
+#contact_form .container .contact_info .info li span:nth-child(2) {
+    color: #fff;
+    margin-left: 10px;
+    font-weight: 300;
+    opacity: 0.5;
+}
+
+#contact_form .container .contact_info .info li span:nth-child(2) {
+    opacity: 1;
+}
+
+#contact_form .container .contact_info .sci {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#contact_form .container .contact_info .sci li {
+    list-style-type: none;
+    margin-right: 15px;
+    display: inline;
+}
+
+#contact_form .container .contact_info .sci li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#contact_form .container .contact_info .sci li a .fa {
+    opacity: 1;
+}
+
+#contact_form .container .contact_info .sci li:hover a .fa {
+    opacity: 0.5;
+}
+
+#contact_form .container .contactForm {
+    position: absolute;
+    padding: 70px 50px;
+    background-color: #fff;
+    margin-left: 150px;
+    padding-left: 250px;
+    height: 100%;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, .5);
+    width: calc(100% - 150px);
+}
+
+#contact_form .container .contactForm h2 {
+    color: #0f3959;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#contact_form .container .contactForm .formBox {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+#contact_form .container .contactForm .formBox .inputBox {
+    position: relative;
+    margin: 0 0 35px 0;
+}
+
+#contact_form .container .contactForm .formBox .inputBox.w50 {
+    width: 47%;
+}
+
+#contact_form .container .contactForm .formBox .inputBox.w100 {
+    width: 100%;
+}
+
+#contact_form .container .contactForm .formBox .inputBox input,
+#contact_form .container .contactForm .formBox .inputBox textarea {
+    width: 100% !important;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    border: none;
+    resize: none;
+    border-bottom: 1px solid #777;
+    outline: none;
+}
+
+#contact_form .container .contactForm .formBox .inputBox textarea {
+    min-height: 120px;
+}
+
+#contact_form .container .contactForm .formBox .inputBox span {
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+#contact_form .container .contactForm .formBox .inputBox input:focus~span,
+#contact_form .container .contactForm .formBox .inputBox textarea:focus~span,
+#contact_form .container .contactForm .formBox .inputBox input:valid~span,
+#contact_form .container .contactForm .formBox .inputBox textarea:valid~span {
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #ff0000;
+}
+
+#contact_form .container .contactForm .formBox .inputBox input[type="submit"] {
+    position: relative;
+    cursor: pointer;
+    background: #0f3959;
+    color: #fff;
+    border: none;
+    max-width: 150px;
+    padding: 12px;
+}
+
+#contact_form .container .contactForm .formBox .inputBox input[type="submit"]:hover {
+    background-color: #ff0000;
+}
+
+
+/* small */
+
+.contact_form_small_up {
+    margin-bottom: 10vh;
+}
+
+#contact_form_small .container .small_up {
+    width: 100%;
+    background: #0f3959;
+    padding: 40px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#contact_form_small .container .small_up h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#contact_form_small .container .small_up .info {
+    margin: 20px 0;
+}
+
+#contact_form_small .container .small_up .info li {
+    list-style-type: none;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+#contact_form_small .container .small_up .info li span:nth-child(1) {
+    width: 30px;
+    min-width: 30px;
+}
+
+#contact_form_small .container .small_up .info li span:nth-child(1) i {
+    color: #fff;
+    opacity: .5;
+}
+
+#contact_form_small .container .small_up .info li span:nth-child(1) i:hover {
+    opacity: .9;
+}
+
+#contact_form_small .container .small_up .info li span:nth-child(2) {
+    color: #fff;
+    margin-left: 10px;
+    font-weight: 300;
+    opacity: 0.5;
+}
+
+#contact_form_small .container .small_up .info li span:nth-child(2) {
+    opacity: 1;
+}
+
+#contact_form_small .container .small_up .sci li {
+    list-style-type: none;
+    margin-right: 15px;
+    display: inline;
+}
+
+#contact_form_small .container .small_up .sci li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#contact_form_small .container .small_up .sci li a .fa {
+    opacity: 1;
+}
+
+#contact_form_small .container .small_up .sci li:hover a .fa {
+    opacity: 0.5;
+}
+
+#contact_form_small {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+.small_up {
+    background: #0f3959;
+}
+
+.small_down {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.small_down h2 {
+    text-align: center;
+}
+
+@media (max-width: 1130px) {
+    .contactBannerText {
+        margin-bottom: 10vh;
+    }
+}
+
+@media (max-width: 1130px) {
+    #contact_form {
+        display: none;
+    }
+}
+
+@media (min-width: 1130px) {
+    #contact_form_small {
+        display: none;
+    }
+}
+
+
+/* Footer section */
+
+footer {
+    width: 100%;
+    min-height: 80vh;
+}
+
+.footer-section {
+    color: #fff;
+    background: linear-gradient( rgba(16, 96, 169, 1.0), rgba(16, 96, 169, .9)), url(../images/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 100px;
+    justify-content: center;
+    min-height: 60vh;
+}
+
+.footer-section h1 {
+    font-size: 13px;
+}
+
+.footer-section p {
+    font-size: 12px;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section .fa {
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #fff;
+    padding: 8px;
+    border-radius: 100%;
+}
+
+.footer-section input[type=text] {
+    width: 40%;
+    min-height: 5vh;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    font-size: 11px;
+    text-align: center;
+}
+
+.footer-section button[type=button] {
+    width: 100%;
+    min-height: 5vh;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: #ff0000;
+    font-size: 11px;
+    text-align: center;
+    padding: 8px;
+}
+
+footer hr {
+    color: #fff;
+}
+
+.footer-bottom {
+    color: #fff;
+    height: 20vh;
+    background-color: rgb(26, 25, 25);
+}
+
+.footer-bottom p {
+    align-items: center;
+    font-size: 12px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+iframe{
+    width: 300px;
+    height: 300px;
+}
+
+@media only screen and (min-width: 1024px) {
+    iframe{
+        width: 200px;
+        height: 200px;
+    }
+
+    .contact_form_small_up {
+        margin-bottom: 10vh;
+    }
+    
+    #contact_form_small .container .small_up {
+        width: 100%;
+        height: 30rem;
+        background: #0f3959;
+        padding: 40px;
+        box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+}  
+
+@media only screen and (min-width: 768px) {
+    iframe{
+        width: 180px;
+        height:180px;
+    }
+
+    .contact_form_small_up {
+        margin-bottom: 10vh;
+    }
+    
+    #contact_form_small .container .small_up {
+        width: 100%;
+        height: 30rem;
+        background: #0f3959;
+        padding: 40px;
+        box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+}     
+
+@media only screen and (min-width: 280px) {
+    iframe{
+        width: 250px;
+        height:250px;
+    }
+
+@media only screen and (min-width: 768px) {
+        iframe{
+            width: 170px;
+            height:170px;
+        }
+
+
+/* End of Footer section */
+

@@ -1,0 +1,46 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    outline: none;
+}
+
+#CSR {
+    overflow: hidden;
+}
+
+#CSR_banner {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/contact.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#CSR_grid_section {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+#CSR_about h1 {
+    margin-bottom: 10px;
+}
+
+
+
+#CSR_about .transform-on-hover:hover {
+    transform: translateY(-10px) scale(1.02);
+    transition: ease.9s;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15) !important;
+    
+}
+
+#CSR_grid_section #card-block p{
+    padding: 10px;
+    font-size: bolder;
+}
+#CSR_grid_section .fa-stack{
+    position: relative;
+}
